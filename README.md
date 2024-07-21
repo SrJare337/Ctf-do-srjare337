@@ -1,4 +1,4 @@
-![Captura de tela 2024-07-21 132039](https://github.com/user-attachments/assets/e44ed705-fefe-4417-ab41-69b23bb1a1b4)
+![Captura de tela 2024-07-21 134624](https://github.com/user-attachments/assets/c801c64d-2dda-40e7-b088-895a8947d267)
 ## Aplicação Vulnerável!🔒☠️
 ## Dificuldade: Fácil 🟩
 ## O objetivo do desafio é treinar suas habilidades de hacking..
