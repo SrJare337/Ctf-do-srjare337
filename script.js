@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === 'admin' && password === '1234') {
+    if (username === 'Srjare337' && password === 'pass') {
         document.getElementById('message').textContent = 'Login bem-sucedido!';
         document.getElementById('message').style.color = 'green';
     } else {
