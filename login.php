@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "123srjare";
-$dbname = "techsolutions";
+$password = "";
+$dbname = "adminpanel";
 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,16 +16,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    // SQL Injection vulnerability
-    $sql = "SELECT * FROM users WHERE username='$user' AND password='$pass'";
-    $result = $conn->query($sql);
+    // Usar prepared statements para evitar SQL Injection
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+    $stmt->bind_param("ss", $user, $pass);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
+        // Login bem-sucedido
         header("Location: dashboard.php");
         exit();
     } else {
         echo "Usuário ou senha inválidos.";
     }
+
+    $stmt->close();
 }
 
 $conn->close();
