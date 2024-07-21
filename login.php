@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "123srjare";
 $dbname = "techsolutions";
 
 // Criar conexão
