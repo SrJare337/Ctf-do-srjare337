@@ -4,15 +4,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+    color: #0f0;
 }
 
 .login-container {
-    background: #fff;
+    background: #222;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
     text-align: center;
 }
 
@@ -29,8 +30,10 @@ body {
 .input-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #0f0;
     border-radius: 4px;
+    background: #000;
+    color: #0f0;
 }
 
 button {
@@ -38,16 +41,17 @@ button {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background: #5cb85c;
-    color: #fff;
+    background: #0f0;
+    color: #000;
     font-size: 16px;
+    cursor: pointer;
 }
 
 button:hover {
-    background: #4cae4c;
+    background: #0a0;
 }
 
 #message {
     margin-top: 15px;
-    color: red;
+    color: #0f0;
 }
