@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         });
 
         setTimeout(function() {
-            window.location.href = '';
+            window.location.href = 'index2.html';
         }, 2000);
     } else {
         document.getElementById('message').textContent = 'Usuário ou senha incorretos.';
