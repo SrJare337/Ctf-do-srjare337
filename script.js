@@ -15,6 +15,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             spread: 70,
             origin: { y: 0.6 }
         });
+
+        setTimeout(function() {
+            window.location.href = '';
+        }, 2000);
     } else {
         document.getElementById('message').textContent = 'Usuário ou senha incorretos.';
         document.getElementById('message').style.color = 'red';
